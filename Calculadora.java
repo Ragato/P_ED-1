@@ -73,6 +73,19 @@ public class Calculadora {
             result *= x;
         }
         return result;
+		
+		public String deHexadecimalABinario(String hex) {
+
+        long decimal = Long.parseLong(hex, 16);
+
+        return Long.toBinaryString(decimal);
+    // Modificación Iván S
+    public String deHexadecimalAOctal(String hex) {
+
+        long decimal = Long.parseLong(hex, 16);
+
+        return Long.toOctalString(decimal);
     }
+    
 	
 }
